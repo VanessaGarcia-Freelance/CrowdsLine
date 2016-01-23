@@ -8,7 +8,15 @@ Template Name: - TCL Homepage 2016
 
 <!-- Start displaying special parent pages -->
 <div class="top-panel">
-Top Panel
+	<div class="scoreboard-container">
+		<div class="widget-container"></div>
+	</div>
+
+	<div class="scroll-down-arrow-container">
+		<div class="scroll-arrow">
+			<h4>Learn More</h4>
+		</div>
+	</div>
 </div>
 
 <?php

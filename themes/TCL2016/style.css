@@ -51,6 +51,7 @@ Header
   /*top: 0;*/
   width: 100%;
   z-index: 1000;
+  background-color: transparent;
 }
 #header .columns {
   display: inline-block;
@@ -59,7 +60,7 @@ Header
 }
 #header .row-header {
   max-width: 1020px;
-  padding: 60px 0 30px;
+  padding: 50px 0 30px;
   width: 80%;
 }
 .home #header .extra {
@@ -219,10 +220,54 @@ Content
 }
 
 .top-panel {
+  height: 100%; 
+  background: url("http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/top-panel-bg.jpg") black no-repeat center center;
+  background-size: cover;
+  height: 914px;
+}
+.top-panel .scoreboard-container {
+  width: 690px;
+  height: 434px;
+  background: url("http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/gameboard-bg.png") no-repeat center center;
+  background-size: contain;
+  margin: 0 auto;
+  position: relative;
+  top: 20%;
+}
+
+.top-panel .scoreboard-container .widget-container {
+  width: 240px;
+  height: 385px;
+  background: url("http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/widget-placeholder.jpg") no-repeat center center;
+  background-size: contain;
+  float: right;
+  margin-right: 51px;
+  margin-top: 23px;
+}
+
+.top-panel .scroll-down-arrow-container {
+  width: 138px;
+  height: 50px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+}
+.top-panel .scroll-down-arrow-container .scroll-arrow {
+  margin-left: -50%;
+  background: url("http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/down-arrow.png") no-repeat center center;
+  width: 100%;
   height: 100%;
-  /*background-color: grey;*/
-  background: url("<?php echo $bgnd_image[0] ; ?>");
-  height: 600px;
+  position: absolute;
+  cursor: pointer;
+}
+.top-panel .scroll-down-arrow-container .scroll-arrow h4 {
+  color: white;
+  font-size: 9px;
+  text-align: center;
+  line-height: 0;
+  letter-spacing: 0.9;
+  margin-top: 3px;
+  
 }
 
 
