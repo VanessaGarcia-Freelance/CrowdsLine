@@ -15,6 +15,9 @@
 
 
     $(document).ready(function(){
+      //will need to use this for the featured section
+      //http://jsfiddle.net/bpbaz10L/
+
 
       $('.tabs').slick({
         slidesToShow: 3,
