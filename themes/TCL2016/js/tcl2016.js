@@ -10,4 +10,25 @@
         return false;
     });
 
+    // $('.featured-slider').slick();
+    //$('.featured-slider').slick();
+
+
+    $(document).ready(function(){
+      $('.tabs').slick({
+        slidesToShow: 3,
+        asNavFor: '.featured-slider',
+        centerMode: false,
+        focusOnSelect: true
+      });
+
+      $('.featured-slider').slick({
+        asNavFor: '.tabs',
+        slidesToScroll: 1,
+        //autoplay: true,
+        //autoplaySpeed: 5000
+        prevArrow: '<button type="button" class="slick-prev"><</button>',
+        nextArrow: '<button type="button" class="slick-next">></button>'
+      });
+    });
 } )( jQuery )

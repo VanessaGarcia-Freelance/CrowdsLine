@@ -19,9 +19,12 @@ function gacode() {
 <?php
 }
 
+add_action( 'wp_enqueue_scripts', 'slick_js_enqueue_scripts' );
+function slick_js_enqueue_scripts() {
+    wp_enqueue_script( 'slick_js', get_stylesheet_directory_uri() . '/js/slick.min.js', '', '', true );
+}
+
 add_action( 'wp_enqueue_scripts', 'child_functions_enqueue_scripts' );
 function child_functions_enqueue_scripts() {
     wp_enqueue_script( 'child_functions', get_stylesheet_directory_uri() . '/js/tcl2016.js', '', '', true );
 }
-
-

@@ -45,6 +45,7 @@
 
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); wp_head(); ?>
 	<?php gacode(); ?>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
 </head>
 
 <body <?php body_class(); ?>>
