@@ -15,6 +15,7 @@
 
 
     $(document).ready(function(){
+
       $('.tabs').slick({
         slidesToShow: 3,
         asNavFor: '.featured-slider',
@@ -30,5 +31,14 @@
         prevArrow: '<button type="button" class="slick-prev"><</button>',
         nextArrow: '<button type="button" class="slick-next">></button>'
       });
+
+      $('.latest-posts').slick({
+        slidesToScroll: 1,
+        slidesToShow: 5,
+        centerMode: true,
+        prevArrow: '<button type="button" class="slick-prev"><</button>',
+        nextArrow: '<button type="button" class="slick-next">></button>'
+      });
+
     });
 } )( jQuery )

@@ -13,34 +13,6 @@
 			<div id="footer-inside" class="clearfix">
 
       			<div class="columns">
-
-      				
- 					<h2 class="recent-posts-header">Latest Blog Posts</h2>
-					<?php
-					query_posts( 'posts_per_page=4' );
- 					if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-					<div class="home-blog-box one-fourth">
-						<article <?php post_class('post clearfix'); ?>>
-						
-						<a class="featured-image" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-							<?php the_post_thumbnail( 'medium' ); ?>
-						</a>
-						<h2 class="entry-title">
-							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-						</h2>
-
-						<?php 
-						echo '<p class="excerpt">'.wp_trim_words( get_the_content(), 8, '...' ).'</p>';?>
-
-						<span class="date-title"> 
-						 
-							<?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?>
-						</span>
-						</article>
-					</div> 
-					<?php endwhile; ?>
-					<?php endif; ?>
-
         			<?php if ( get_theme_mod('theme_customizer_footertextlineone') ) { ?>
         			<h2 class="fade-it2 fadeInDown animated">
         			<?php if ( get_theme_mod('theme_customizer_footertextlineone') ) { ?>
@@ -83,14 +55,7 @@
 						</div>
 				 	<?php } ?>
 
-				</div>
-				<?php if($setcategory != 'y'){ ?>
-					<div class="view-more-blog">
-						<a href="/blog">View More</a>
-					</div>
-				<?php } ?>
- 
-
+				</div> 
 			</div>
 		</div>
 	</div>

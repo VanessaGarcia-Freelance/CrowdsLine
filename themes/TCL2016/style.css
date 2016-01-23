@@ -303,6 +303,39 @@ Content
   background-color: rgba(167, 167, 167, 0.8);
 }
 
+.latest-posts .post {
+  height: 578px;
+  background: no-repeat center center;
+  background-size: cover;
+  background-color: rgba(0,0,0, .5);
+  position:relative;
+}
+.latest-posts .post .content {
+  display: none;
+  position: absolute;
+  bottom: 0;
+}
+.latest-posts .post .content .prediction {
+  background-color: #dcdcdc;
+  /*width: 80%;*/
+  margin: 0 auto;
+  padding: 20px;
+}
+.latest-posts .post .content .post-info {
+  background-color: #2d65b8;
+  color: white;
+  padding: 10px;
+}
+.latest-posts .post .content .post-info h2 a {
+  color: white;
+}
+.latest-posts .post.slick-current {
+  background-color: rgba(0,0,0, 1);
+}
+.latest-posts .post.slick-current .content {
+  display: block;
+}
+
 /* ----------------------------------
 Event Section - Home Page
 ------------------------------------- */
