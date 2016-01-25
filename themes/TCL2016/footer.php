@@ -108,21 +108,5 @@
 <!-- Load the scripts -->
 <?php wp_footer(); ?>
 
-	<script type="text/javascript"> 
-		jQuery(document).ready(function($){
-		   $(".blog-subnav").slideUp();
-		  $(".menu-main-menu-container a[title|='blog']").mouseover(function(){
-		   	$(".blog-subnav").stop().slideDown("slow"); 
-		   	$(".menu-main-menu-container a[title|='blog']").addClass('highlight');
-		  });
-		  $(".blog-subnav").mouseleave(function(){   
-		  	 	setTimeout(function(){
-		  	 		$(".blog-subnav").stop().slideUp("slow");  
-		   			$(".menu-main-menu-container a[title|='blog']").removeClass('highlight');
-				}, 100);
-		  });
-		 });
-
-	</script>
 </body>
 </html>

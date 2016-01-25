@@ -40,12 +40,16 @@ button {
   font-size: 10px;
   text-transform: uppercase;
   display: block;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 button a{
   display: block;
   padding: 15px;
+  font-family: "azo-sans-bold","Montserrat","Helvetica Neue",Helvetica,sans-serif;
 }
-button a:hover{
+button:hover a{
   text-decoration: none;
 }
 
@@ -104,21 +108,28 @@ Header
 }
 .nav a { 
     /*padding: 0 15px;*/
-    -webkit-transition: color 500ms ease-out .1s;
-    -moz-transition: color 500ms ease-out .1s;
-    -o-transition: color 500ms ease-out .1s;
-    transition: color 500ms ease-out .1s;
+    -webkit-transition: color 250ms ease-out .1s;
+    -moz-transition: color 250ms ease-out .1s;
+    -o-transition: color 250ms ease-out .1s;
+    transition: color 250ms ease-out .1s;
     line-height: 0;
     padding-left: 0;
   }
 
-  .nav a:hover{
-    color:#b40606;
-    -webkit-transition: color 500ms ease-out .1s;
-    -moz-transition: color 500ms ease-out .1s;
-    -o-transition: color 500ms ease-out .1s;
-    transition: color 500ms ease-out .1s;
+  .nav a:hover, .header-shrink #nav a.selected, .header-shrink #nav a:hover{
+    color:#818181;
+    -webkit-transition: color 250ms ease-out .1s;
+    -moz-transition: color 250ms ease-out .1s;
+    -o-transition: color 250ms ease-out .1s;
+    transition: color 250ms ease-out .1s;
   }
+
+.header .nav {
+  padding: 25px 0px;
+}
+#dynamic #nav a {
+    line-height: 30px;
+}
 
 .nav li {
   /*padding: 0;*/
@@ -164,14 +175,17 @@ Header
 
 .nav li.login-btn {
   background-color: #b40606;
-  -webkit-transition: background-color 500ms ease-out .1s;
-  -moz-transition: background-color 500ms ease-out .1s;
-  -o-transition: background-color 500ms ease-out .1s;
-  transition: background-color 500ms ease-out .1s;
+  -webkit-transition: background-color 250ms ease-out .1s;
+  -moz-transition: background-color 250ms ease-out .1s;
+  -o-transition: background-color 250ms ease-out .1s;
+  transition: background-color 250ms ease-out .1s;
 }
-.nav li.login-btn:hover {
-  color: #b40606;
-  background-color: white;
+.nav li.login-btn:hover{
+  color: white;
+  background-color: #7f0000;
+}
+.nav li.login-btn:hover a, .header-shrink #nav .login-btn:hover a {
+  color: white;
 }
 
 .header-shrink .nav li  a.highlight,
@@ -262,7 +276,7 @@ video {
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background: url('videos/TCL_video_screen.jpg') no-repeat;
     background-size: cover;
     transition: 1s opacity;
 }
@@ -272,7 +286,7 @@ video {
 
 .top-panel {
   height: 100%; 
-  /*background: url("http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/top-panel-bg.jpg") black no-repeat center center;*/
+  background: url("img/feature_video_darker_overlay.png") transparent no-repeat center center;
   background-size: cover;
   height: 914px;
   position: relative;
@@ -358,6 +372,7 @@ video {
   line-height: 49px;
   text-transform: uppercase;
   letter-spacing: -3px !important;
+  font-family: "azo-sans-bold","Montserrat","Helvetica Neue",Helvetica,sans-serif;
 }
 .featured-slider .copy p {
   font-size: 12px;
@@ -375,6 +390,13 @@ video {
   background-color: rgba(167, 167, 167, 0.2);
   padding: 10px 20px;
   cursor: pointer;
+  -webkit-transition: background-color 250ms ease-out .1s;
+  -moz-transition: background-color 250ms ease-out .1s;
+  -o-transition: background-color 250ms ease-out .1s;
+  transition: background-color 250ms ease-out .1s;
+}
+.tabs .slick-slide:hover {
+  background-color: rgba(167, 167, 167, 0.4);
 }
 .tabs .slick-slide p{
   text-align: center;
@@ -383,6 +405,9 @@ video {
 .tabs div.slick-current {
   color: white;
   background-color: rgba(167, 167, 167, 0.8);
+}
+.tabs div.slick-current:hover{
+  background-color: rgba(167, 167, 167, 0.9);
 }
 
 
@@ -427,6 +452,7 @@ video {
 }
 .latest-posts .post .content .post-info h2 a {
   color: white;
+  font-family: "azo-sans-bold","Montserrat","Helvetica Neue",Helvetica,sans-serif;
 }
 .latest-posts .post.slick-current, .latest-posts .post:hover {
   opacity: 1;
@@ -768,7 +794,7 @@ Leaderboard Contest Section - Home Page
     margin: -26px 33px 20px;
 }
 #main.single .post-content p {
-    font-family: "azo-sans-web","Montserrat","Helvetica Neue",Helvetica,sans-serif; 
+  font-family: "azo-sans-web","Montserrat","Helvetica Neue",Helvetica,sans-serif; 
   font-size: 15px;
   color: #17181a;
 }
