@@ -8,6 +8,13 @@ Template Name: - TCL Homepage 2016
 
 <!-- Top Panel of the Homepage -->
 <div class="top-panel">
+<!-- video bg -->
+	<video autoplay  poster="<?php echo get_stylesheet_directory_uri(); ?>/videos/TCL_video_screen.jpg" id="bgvid" loop>
+		<source src="<?php echo get_stylesheet_directory_uri(); ?>/videos/TCL_homepage_video.webm" type="video/webm">
+		<source src="<?php echo get_stylesheet_directory_uri(); ?>/videos/TCL_homepage_video.mp4" type="video/mp4">
+	</video>
+
+
 	<div class="scoreboard-container">
 		<div class="widget-container"></div>
 	</div>

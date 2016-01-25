@@ -249,12 +249,31 @@ Content
   float: none;
 }
 
+video { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
 .top-panel {
   height: 100%; 
-  background: url("http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/top-panel-bg.jpg") black no-repeat center center;
+  /*background: url("http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/top-panel-bg.jpg") black no-repeat center center;*/
   background-size: cover;
   height: 914px;
   position: relative;
+  overflow: hidden;
 }
 .top-panel .scoreboard-container {
   width: 690px;

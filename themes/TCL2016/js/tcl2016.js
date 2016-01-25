@@ -1,17 +1,32 @@
 ( function ($) {
     console.log('loading child functions');
+  
+    $('.top-panel').css({ height: $(window).innerHeight() });
+    $(window).resize(function(){
+      $('.top-panel').css({ height: $(window).innerHeight() });
+    });
 
-    //console.log('scroll' scrollTop());
+
+    // Video functionality
+    var vid = document.getElementById("bgvid");
+    function vidFade() {
+      vid.classList.add("stopfade");
+    }
+
+    vid.addEventListener('ended', function()
+    {
+    // only functional if "loop" is removed 
+    vid.pause();
+    // to capture IE10
+    vidFade();
+    }); 
 
     $('.scroll-arrow').click(function () { 
         $('html, body').animate({
-            scrollTop: 864
+            scrollTop: $(window).innerHeight() - 80
         }, 600);
         return false;
     });
-
-    // $('.featured-slider').slick();
-    //$('.featured-slider').slick();
 
 
     $(document).ready(function(){
