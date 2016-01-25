@@ -8,73 +8,29 @@
 	<?php if(!is_single() && !is_page_template( 'press-custom.php' )   ) { ?>
 	<?php if(is_archive()){ $setcategory = 'y'; } ?>
 	<!-- First footer area -->
-	<div id="footer-background">
-		<div class="row clearfix">
-			<div id="footer-inside" class="clearfix">
-
-      			<div class="columns">
-        			<?php if ( get_theme_mod('theme_customizer_footertextlineone') ) { ?>
-        			<h2 class="fade-it2 fadeInDown animated">
-        			<?php if ( get_theme_mod('theme_customizer_footertextlineone') ) { ?>
-        				<?php echo esc_textarea('' .get_theme_mod( 'theme_customizer_footertextlineone', '' )."\n");?>
-	 				<?php } ?>
-	 				</h2>
-	 				<?php } ?>
-        
-        			<?php if ( get_theme_mod('theme_customizer_footertextlinetwo') ) { ?>
-        			<p class="lead fade-it2 fadeInUp animated">
-        			<?php if ( get_theme_mod('theme_customizer_footertextlinetwo') ) { ?>
-        				<?php echo esc_textarea('' .get_theme_mod( 'theme_customizer_footertextlinetwo', '' )."\n");?>
-	 				<?php } ?>
-	 				</p> 
-	 				<?php } ?>
-
-				 	<?php if ( get_theme_mod('theme_customizer_footertextbutton1') ) { ?>
-				 		<a href="<?php if ( get_theme_mod('theme_customizer_footertextbutton1url') ) { ?><?php echo esc_url('' .get_theme_mod( 'theme_customizer_footertextbutton1url', '' )."\n");?><?php } ?>">
-				 			<span class="button-down">
-				 			<i class="icon-arrow-right"></i> <?php echo esc_textarea('' .get_theme_mod( 'theme_customizer_footertextbutton1', '' )."\n");?>
-				 			</span>
-				 		</a>
-				 	<?php } ?>
-
-				 	<?php if ( get_theme_mod('theme_customizer_footertextbutton2') ) { ?>
-				 		<a href="<?php if ( get_theme_mod('theme_customizer_footertextbutton2url') ) { ?><?php echo esc_url('' .get_theme_mod( 'theme_customizer_footertextbutton2url', '' )."\n");?><?php } ?>">
-				 			<span class="button-down">
-				 			<i class="icon-arrow-right"></i> <?php echo esc_textarea('' .get_theme_mod( 'theme_customizer_footertextbutton2', '' )."\n");?>
-				 			</span>
-				 		</a>
-				 	<?php } ?>
-
-				 	<?php if ( get_theme_mod('theme_customizer_footertextsubscribe') ) { ?>
-				 		<div id="mc_embed_signup" class="lefts">
-							<form action="<?php echo '' .get_theme_mod( 'theme_customizer_footertextsubscribe', '' )."\n";?>" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-								<label for="mce-EMAIL"></label>
-								<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-								<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-							</form>
-						</div>
-				 	<?php } ?>
-
-				</div> 
-			</div>
-		</div>
-	</div>
 	<?php } ?>
 	<?php } ?>
 	<!-- Second footer area -->
 	<div class="footer-below clearfix">
 		<div class="row clearfix">
 
-				<div class="logo-footer">
-				 	<?php if ( get_theme_mod('theme_customizer_logo') ) { ?>
-						&copy;<a href="<?php echo home_url( '/' ); ?>" class="clearfix"><img class="logo-image" src="<?php echo esc_url('' .get_theme_mod( 'theme_customizer_logo', '' )."\n");?>" alt="<?php the_title(); ?>" /></a>
-	    			<?php } else { ?>
-		    			&copy;<a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo('name'); ?>" class="logo-text"><?php bloginfo('name') ?></a> 
-	    			<?php } ?>
-	    		</div>
+				<div class="left-col">
+					<div class="logo-footer">
+					 	<?php if ( get_theme_mod('theme_customizer_logo') ) { ?>
+							<a href="<?php echo home_url( '/' ); ?>" class="clearfix"><img class="logo-image" src="<?php echo esc_url('' .get_theme_mod( 'theme_customizer_logo', '' )."\n");?>" alt="<?php the_title(); ?>" /></a>
+		    			<?php } else { ?>
+			    			<a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo('name'); ?>" class="logo-text"><?php bloginfo('name') ?></a> 
+		    			<?php } ?>
+		    		</div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>
+		    		<div class="footer-nav">
+		    			<?php if(is_front_page()) { ?>
+							<?php wp_nav_menu(array('theme_location' => 'main', 'menu_class' => 'nav')); ?>
+						<?php } else { ?>
+							<?php wp_nav_menu(array('theme_location' => 'inner', 'menu_class' => 'nav')); ?>
+						<?php } ?>
+		    		</div>
+	    		</div>
 
 	    		<div class="sharing">
 		    		<ul class="socials">
@@ -140,7 +96,7 @@
 					</ul>
 				</div>
 	<div class="clearfix ft-links">
- 		<a href="/terms">Terms of Service</a>  | <a href="/privacy">Privacy Policy</a>
+ 		<p>COPYRIGHT © 2016 THE CROWDS LINE, INC. - ALL RIGHTS RESERVED | <a href="/terms">Terms of Service</a>  | <a href="/privacy">Privacy Policy</a></p>
 	</div>
 		</div>
 	</div>

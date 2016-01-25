@@ -37,10 +37,13 @@ h1, h2, h3, h4, h5 {
 /* Buttons */
 button {
   border: none;
-  padding: 15px;
   font-size: 10px;
   text-transform: uppercase;
   display: block;
+}
+button a{
+  display: block;
+  padding: 15px;
 }
 button a:hover{
   text-decoration: none;
@@ -425,11 +428,10 @@ video {
 .latest-posts .post .content .post-info h2 a {
   color: white;
 }
-.latest-posts .post.slick-current {
-  /*background-color: rgba(0,0,0, 1);*/
+.latest-posts .post.slick-current, .latest-posts .post:hover {
   opacity: 1;
 }
-.latest-posts .post.slick-current .content {
+.latest-posts .post.slick-current .content, .latest-posts .post:hover .content {
   display: block;
 }
 
@@ -1603,14 +1605,45 @@ body.blog #footer-background{
   display: none;
 }
 
-.ft-links{
+#footer .logo-footer {
+  float: none;
+  width: 137px;
+  margin-bottom: 20px;
+}
+#footer .left-col {
+  width: 50%;
+  float: left;
+  margin-bottom: 20px;
+}
+#footer .left-col .footer-nav {
+  font-family: "azo-sans-bold","Montserrat","Helvetica Neue",Helvetica,sans-serif;
+  font-size: 12px;
+}
+#footer .left-col .footer-nav .nav, #footer .left-col .footer-nav .nav li {
+  float: none;
+}
+#footer .left-col .footer-nav .nav li{
+  padding: 5px 0;
+}
+#footer .left-col .footer-nav .nav .login-btn{
+  display: none;
+}
+#footer .ft-links{
   padding: 20px 0;
+  clear: both;
+  border-top: 1px solid #494949;
+}
+#footer .ft-links p{
+  font-family: "azo-sans-bold","Montserrat","Helvetica Neue",Helvetica,sans-serif;
+  font-size: 9px;
 }
 
-.ft-links a{
+#footer .ft-links a{
   font-size: 11px;
-    font-family: "azo-sans-bold","Montserrat","Helvetica Neue",Helvetica,sans-serif;
-    color: #ffffff;
+    color: #548de0;
+}
+#footer .ft-links a:hover {
+  text-decoration: underline;
 }
 
 #footer #footer-background #footer-inside{
