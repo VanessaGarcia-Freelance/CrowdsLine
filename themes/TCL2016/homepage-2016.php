@@ -20,44 +20,60 @@ Template Name: - TCL Homepage 2016
 </div>
 
 <div class="slider-container">
-	<div class="tabs">
-	  <div><p>your content 1</p></div>
-	  <div><p>your content 2</p></div>
-	  <div><p>your content 3</p></div>
+	<!-- tabs -->
+	<div class="tabs-container">
+		<div class="tabs">
+		  <div><p>THE POWER OF THE CROWD</p></div>
+		  <div><p>PLAY &amp; WIN</p></div>
+		  <div><p>SEE HOW YOU STACK UP</p></div>
+		</div>
 	</div>
 
+	<!-- slides -->
 	<div class="featured-slider">
-	  <div>
+		<div>
+	  <div class="slide-container">
 	  	<div class="slide-image">
       	<img src="http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/slide-01.png" />
       </div>
       <div class="copy">
-	      <h2>something something</h2>
-	      <p class="flex-caption">Adventurer Caramel</p>
+	      <h2>feel the power of the crowd</h2>
+	      <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet in purus id vestibulum. Mauris posuere sagittis leo nec aliquet. Etiam suscipit nisi lorem, id venenatis nisl.</p>
+	      <button class="primary"><a href="#">Play Now</a></button>
       </div>
 	  </div>
+	  </div>
+
 	  <div>
+	  <div class="slide-container">
 	  	<div class="slide-image">
       	<img src="http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/slide-02.png" />
       </div>
       <div class="copy">
-	      <h2>something something</h2>
-	      <p class="flex-caption">Adventurer Caramel</p>
+	      <h2>play &amp; win</h2>
+	      <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet in purus id vestibulum. Mauris posuere sagittis leo nec aliquet. Etiam suscipit nisi lorem, id venenatis nisl.</p>
+	      <button class="primary"><a href="#">Play Now</a></button>
       </div>
 	  </div>
+	  </div>
+
 	  <div>
+	  <div class="slide-container">
 	  	<div class="slide-image">
       	<img src="http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/slide-03.png" />
       </div>
       <div class="copy">
-	      <h2>something something</h2>
-	      <p class="flex-caption">Adventurer Caramel</p>
+	      <h2>track your results</h2>
+	      <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet in purus id vestibulum. Mauris posuere sagittis leo nec aliquet. Etiam suscipit nisi lorem, id venenatis nisl.</p>
+	      <button class="primary"><a href="#">Play Now</a></button>
       </div>
+	  </div>
 	  </div>
 	</div>
 </div>
 
 <!-- Latest Posts -->
+<div class="blog-title"><h3>From the Blog</h3>
 <div class="latest-posts">
 	<?php
 	query_posts( 'posts_per_page=12' );
@@ -76,7 +92,7 @@ Template Name: - TCL Homepage 2016
 		</a> -->
 		<div class="content">
 			<div class="prediction">
-				<p>Make A Prediction</p>
+				<button class="secondary"><a href="<?php the_permalink(); ?>">Make A Prediction</a></button>
 			</div>
 			<div class="post-info">
 				<h2 class="entry-title">

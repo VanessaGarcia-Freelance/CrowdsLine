@@ -34,6 +34,34 @@ h1, h2, h3, h4, h5 {
     src: url(http://cdn.thecrowdsline.com/webfonts/AzoSansRegular.otf);
 }
 
+/* Buttons */
+button {
+  border: none;
+  padding: 15px;
+  font-size: 10px;
+  text-transform: uppercase;
+  display: block;
+}
+button a:hover{
+  text-decoration: none;
+}
+
+button.primary {
+  background-color: #2e66b9;
+  color: white;
+}
+button.primary a{
+  color: white;
+}
+
+button.secondary {
+  background-color: #dcdcdc;
+}
+button.secondary a {
+  color: #010101;
+}
+
+
 /* ----------------------------------
 Header
 ------------------------------------- */
@@ -226,6 +254,7 @@ Content
   background: url("http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/top-panel-bg.jpg") black no-repeat center center;
   background-size: cover;
   height: 914px;
+  position: relative;
 }
 .top-panel .scoreboard-container {
   width: 690px;
@@ -269,12 +298,29 @@ Content
   line-height: 0;
   letter-spacing: 0.9;
   margin-top: 3px;
-  
 }
 
+.slick-arrow {
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  cursor: pointer;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+}
+
+
 .featured-slider {
-  max-width: 700px;
+  /*max-width: 700px;*/
   position: relative;
+  margin: 100px auto;
+}
+.slide-container {
+  max-width: 700px;
   margin: 0 auto;
 }
 .featured-slider .slide-image{
@@ -285,22 +331,51 @@ Content
   position: relative;
   right: 0;
 }
+.featured-slider .copy h2 {
+  font-size: 49px;
+  line-height: 49px;
+  text-transform: uppercase;
+  letter-spacing: -3px !important;
+}
+.featured-slider .copy p {
+  font-size: 12px;
+}
 
+.tabs-container {
+  background-color: rgba(167, 167, 167, .1);
+}
 .tabs {
-  /*background-color: grey;*/
+  max-width: 600px;
+  margin: 0 auto;
 }
 .tabs .slick-slide {
   color: #a7a7a7;
   background-color: rgba(167, 167, 167, 0.2);
   padding: 10px 20px;
-  width: auto;
+  cursor: pointer;
 }
 .tabs .slick-slide p{
   text-align: center;
+  font-size: 10px;
 }
 .tabs div.slick-current {
   color: white;
   background-color: rgba(167, 167, 167, 0.8);
+}
+
+
+.blog-title {
+  background-color: rgba(167, 167, 167, .1);
+}
+.blog-title h3 {
+  text-align: center;
+  font-size: 10px;
+  color: #a7a7a7;
+  margin: 0;
+  letter-spacing: 0 !important;
+}
+.latest-posts .slick-track {
+  background-color: black;
 }
 
 .latest-posts .post {
@@ -309,6 +384,7 @@ Content
   background-size: cover;
   background-color: rgba(0,0,0, .5);
   position:relative;
+  opacity: .5;
 }
 .latest-posts .post .content {
   display: none;
@@ -316,11 +392,11 @@ Content
   bottom: 0;
 }
 .latest-posts .post .content .prediction {
-  background-color: #dcdcdc;
-  /*width: 80%;*/
-  margin: 0 auto;
-  padding: 20px;
 }
+.latest-posts .post .content .prediction button {
+  margin: 0 auto;
+}
+
 .latest-posts .post .content .post-info {
   background-color: #2d65b8;
   color: white;
@@ -330,7 +406,8 @@ Content
   color: white;
 }
 .latest-posts .post.slick-current {
-  background-color: rgba(0,0,0, 1);
+  /*background-color: rgba(0,0,0, 1);*/
+  opacity: 1;
 }
 .latest-posts .post.slick-current .content {
   display: block;
