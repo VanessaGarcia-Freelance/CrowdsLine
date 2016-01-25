@@ -409,6 +409,7 @@ video {
   display: none;
   position: absolute;
   bottom: 0;
+  width: 100%;
 }
 .latest-posts .post .content .prediction {
 }
