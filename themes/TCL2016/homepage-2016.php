@@ -45,7 +45,7 @@ Template Name: - TCL Homepage 2016
       </div>
       <div class="copy">
 	      <h2>feel the power of the crowd</h2>
-	      <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet in purus id vestibulum. Mauris posuere sagittis leo nec aliquet. Etiam suscipit nisi lorem, id venenatis nisl.</p>
+	      <p class="flex-caption">Make your prediction to unlock The Crowds Line, the world's most comprehensive line built by fans like you.</p>
 	      <button class="primary"><a href="#">Play Now</a></button>
       </div>
 	  </div>
@@ -63,7 +63,7 @@ Template Name: - TCL Homepage 2016
       </div>
       <div class="copy">
 	      <h2>play &amp; win</h2>
-	      <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet in purus id vestibulum. Mauris posuere sagittis leo nec aliquet. Etiam suscipit nisi lorem, id venenatis nisl.</p>
+	      <p class="flex-caption">Sign up for The Crowds Line and be instantly eligible to win prizes every week in our contests.</p>
 	      <button class="primary"><a href="#">Play Now</a></button>
       </div>
 	  </div>
@@ -76,7 +76,7 @@ Template Name: - TCL Homepage 2016
       </div>
       <div class="copy">
 	      <h2>track your results</h2>
-	      <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet in purus id vestibulum. Mauris posuere sagittis leo nec aliquet. Etiam suscipit nisi lorem, id venenatis nisl.</p>
+	      <p class="flex-caption">The only platform built around you - track your predictions for the entire season across different leagues, anywhere you go. </p>
 	      <button class="primary"><a href="#">Play Now</a></button>
       </div>
 	  </div>

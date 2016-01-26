@@ -587,6 +587,11 @@ video {
   transform: rotate(180deg);
 }
 
+
+.socials a:hover {
+  text-shadow: 0px 0px 0px white;
+  transition: text-shadow 0;
+}
 /* ----------------------------------
 Event Section - Home Page
 ------------------------------------- */
