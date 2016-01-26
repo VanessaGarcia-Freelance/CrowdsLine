@@ -39,9 +39,9 @@ Template Name: - TCL Homepage 2016
 	<!-- slides -->
 	<div class="featured-slider">
 		<div>
-	  <div class="slide-container">
+	  <div class="slide-container slide-01">
 	  	<div class="slide-image">
-      	<img src="http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/slide-01.png" />
+      	<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/iphone-score-illustration.png" />
       </div>
       <div class="copy">
 	      <h2>feel the power of the crowd</h2>
@@ -52,9 +52,14 @@ Template Name: - TCL Homepage 2016
 	  </div>
 
 	  <div>
-	  <div class="slide-container">
+	  <div class="slide-container slide-02">
 	  	<div class="slide-image">
-      	<img src="http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/slide-02.png" />
+      	<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/iphone-screen.png" />
+      	<div class="app-icons">
+      		<h2>Download the App</h2>
+      		<a href="#" class="google-play"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/google-play-store.png" /></a>
+      		<a href="#" class="apple-store"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/apple-ap-store.png" /></a>
+      	</div>
       </div>
       <div class="copy">
 	      <h2>play &amp; win</h2>
@@ -65,7 +70,7 @@ Template Name: - TCL Homepage 2016
 	  </div>
 
 	  <div>
-	  <div class="slide-container">
+	  <div class="slide-container slide-03">
 	  	<div class="slide-image">
       	<img src="http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/slide-03.png" />
       </div>

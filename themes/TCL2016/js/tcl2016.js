@@ -62,10 +62,10 @@
       $('.featured-slider').slick({
         asNavFor: '.tabs',
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        prevArrow: '<button type="button" class="slick-prev slide-arrow"><</button>',
-        nextArrow: '<button type="button" class="slick-next">></button>'
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>'
       });
 
       $('.featured-slider').on('afterChange', function(event,slick,i){
@@ -78,8 +78,8 @@
         slidesToScroll: 1,
         slidesToShow: 5,
         centerMode: true,
-        prevArrow: '<button type="button" class="slick-prev"><</button>',
-        nextArrow: '<button type="button" class="slick-next">></button>',
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
         responsive: [
           {
             breakpoint: 1024,
