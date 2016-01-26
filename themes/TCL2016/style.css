@@ -309,14 +309,68 @@ video {
 }
 
 .top-panel .scoreboard-container .widget-container {
-  width: 300px;
-  height: 480px;
-  background: url("img/widget-screenshot.jpg") no-repeat center center;
+  /*width: 300px;*/
+  /*height: 480px;*/
+  /*background: url("img/widget-screenshot.jpg") no-repeat center center;*/
   background-size: contain;
   float: right;
   margin-right: 55px;
   margin-top: 37px;
+  position: relative;
 }
+.top-panel .scoreboard-container .widget-container .games {
+  width: 300px;
+  height: 480px;
+}
+.top-panel .scoreboard-container .widget-container .games .game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("img/widget-screenshot.jpg") no-repeat top center;
+  width: 300px;
+  height: 430px;
+  display: none;
+  text-align: center;
+}
+.top-panel .scoreboard-container .widget-container .games .game.active {
+  display: block;
+}
+.top-panel .scoreboard-container .widget-container .more-games {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #3f3f3f;
+}
+.top-panel .scoreboard-container .widget-container .more-games h4 {
+  font-size: 6px;
+  color: white;
+  margin: 1px 0;
+  text-align: center;
+  display: block;
+}
+.top-panel .scoreboard-container .widget-container .more-games ul {
+  margin: 0;
+  padding: 0;
+}
+.top-panel .scoreboard-container .widget-container .more-games ul li {
+  float: left;
+  width: 33%;
+  cursor: pointer;
+  background-color: #656565;
+  list-style-type: none;
+  border-left: 1px solid black;
+}
+.top-panel .scoreboard-container .widget-container .more-games ul li p{
+  text-align: center;
+  font-family: "azo-sans-bold","Montserrat","Helvetica Neue",Helvetica,sans-serif; 
+  font-size: 8.5px;
+  color: white;
+  padding: 5px 0;
+}
+.top-panel .scoreboard-container .widget-container .more-games ul li.active {
+  background-color: #084bbb;
+}
+
 
 @media (max-width: 800px) {
   .top-panel{

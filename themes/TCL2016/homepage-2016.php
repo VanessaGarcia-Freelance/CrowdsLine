@@ -16,7 +16,36 @@ Template Name: - TCL Homepage 2016
 
 
 	<div class="scoreboard-container">
-		<div class="widget-container"></div>
+		<div class="widget-container">
+			<div class="games">
+				<div class="game nfl active">
+					NFL WIDGET
+				</div>
+				<div class="game nba">
+					NBA WIDGET
+				</div>
+				<div class="game ncaab">
+					NCAAB WIDGET
+				</div>
+			</div>
+			
+			<div class="more-games">
+				<h4>More Games</h4>
+				<div class="game-tabs">
+				<ul>
+					<li class="nfl active">
+						<p>NFL</p>
+					</li>
+					<li class="nba">
+						<p>NBA</p>
+					</li>
+					<li class="ncaab">
+						<p>NCAAB</p>
+					</li>
+				</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="scroll-down-arrow-container">

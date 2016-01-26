@@ -30,6 +30,16 @@
     }); 
 
 
+    //widget tabbing functionality
+    $('.game-tabs li').click(function(evt){
+      $('.game.active').removeClass('active');
+      $('.game-tabs li.active').removeClass('active');
+      var current = $(this).attr('class');
+      $(this).addClass('active');
+      $('.game.' + current).addClass('active');
+    });
+
+
     $('.scroll-arrow').click(function () { 
         var scrollHeight;
       if(windowWidth > breakpoint) {
@@ -44,6 +54,7 @@
         }, 600);
         return false;
     });
+
 
 
     $(document).ready(function(){
