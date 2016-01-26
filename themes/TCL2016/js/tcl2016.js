@@ -5,20 +5,12 @@
   
 
     if(windowWidth > breakpoint) {
-      console.log('adjust');
       $('.top-panel').css({ height: $(window).innerHeight() });
       $(window).resize(function(){
         if(windowWidth > breakpoint) {
-          console.log('adjust');
           $('.top-panel').css({ height: $(window).innerHeight() });
         }
-        else {
-          console.log('dont adjust');
-        }
       });
-    }
-    else {
-      console.log('dont adjust');
     }
     
 
@@ -37,9 +29,18 @@
     vidFade();
     }); 
 
+
     $('.scroll-arrow').click(function () { 
+        var scrollHeight;
+      if(windowWidth > breakpoint) {
+        scrollHeight = $(window).innerHeight()  - 80;
+      }
+      else {
+        scrollHeight = 1274 + 80; 
+      }
+
         $('html, body').animate({
-            scrollTop: $(window).innerHeight() - 80
+            scrollTop: scrollHeight
         }, 600);
         return false;
     });
@@ -57,14 +58,21 @@
         focusOnSelect: true
       });
 
+
       $('.featured-slider').slick({
         asNavFor: '.tabs',
         slidesToScroll: 1,
-        //autoplay: true,
-        //autoplaySpeed: 5000
-        prevArrow: '<button type="button" class="slick-prev"><</button>',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: '<button type="button" class="slick-prev slide-arrow"><</button>',
         nextArrow: '<button type="button" class="slick-next">></button>'
       });
+
+      $('.featured-slider').on('afterChange', function(event,slick,i){
+        $('.tabs .slick-slide').removeClass('slick-current');
+        $('.tabs .slick-slide').eq(i).addClass('slick-current');             
+      });
+
 
       $('.latest-posts').slick({
         slidesToScroll: 1,
