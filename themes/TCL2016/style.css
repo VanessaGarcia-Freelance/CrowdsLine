@@ -114,9 +114,11 @@ Header
     transition: color 250ms ease-out .1s;
     line-height: 0;
     padding-left: 0;
+    font-family: "azo-sans-bold","Montserrat","Helvetica Neue",Helvetica,sans-serif; 
   }
 
-  .nav a:hover, .header-shrink #nav a.selected, .header-shrink #nav a:hover{
+
+  .nav a:hover, .header-shrink #nav a.selected, .header-shrink #nav a:hover, #footer .nav a:hover{
     color:#818181;
     -webkit-transition: color 250ms ease-out .1s;
     -moz-transition: color 250ms ease-out .1s;
@@ -181,6 +183,8 @@ Header
   -moz-transition: background-color 250ms ease-out .1s;
   -o-transition: background-color 250ms ease-out .1s;
   transition: background-color 250ms ease-out .1s;
+  padding: 0px 10px 2px 10px;
+  margin-left: 8px;
 }
 .nav li.login-btn:hover{
   color: white;
@@ -295,7 +299,7 @@ video {
   overflow: hidden;
 }
 .top-panel .scoreboard-container {
-  max-width: 801px;
+  width: 695px;
   height: 554px;
   background: url("img/score-board-with-text.png") no-repeat center center;
   background-size: contain;
@@ -1115,10 +1119,10 @@ a.signup-button{
 #main.single .whatsayyou strong{ 
   font-size: 30px;
   display: block;
-    font-family: "azo-sans-bold","Montserrat","Helvetica Neue",Helvetica,sans-serif; 
-    font-weight: normal; 
-      line-height: 30px;
-    margin: 30px 20px 6px;
+  font-family: "azo-sans-bold","Montserrat","Helvetica Neue",Helvetica,sans-serif; 
+  font-weight: normal; 
+  line-height: 30px;
+  margin: 30px 20px 6px;
 }
 #main.single .whatsayyou span{
     font-family: "azo-sans-web","Montserrat","Helvetica Neue",Helvetica,sans-serif; 
