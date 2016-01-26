@@ -293,23 +293,43 @@ video {
   overflow: hidden;
 }
 .top-panel .scoreboard-container {
-  width: 690px;
-  height: 434px;
-  background: url("http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/gameboard-bg.png") no-repeat center center;
+  max-width: 801px;
+  height: 554px;
+  background: url("img/score-board-with-text.png") no-repeat center center;
   background-size: contain;
   margin: 0 auto;
   position: relative;
-  top: 20%;
+  top: 15%;
 }
 
 .top-panel .scoreboard-container .widget-container {
-  width: 240px;
-  height: 385px;
-  background: url("http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/widget-placeholder.jpg") no-repeat center center;
+  width: 300px;
+  height: 480px;
+  background: url("img/widget-screenshot.jpg") no-repeat center center;
   background-size: contain;
   float: right;
-  margin-right: 51px;
-  margin-top: 23px;
+  margin-right: 55px;
+  margin-top: 37px;
+}
+
+@media (max-width: 800px) {
+  .top-panel{
+    height: 1274px;
+  }
+  .top-panel .scoreboard-container {
+    max-width: 473px;
+    height: 974px;
+    background: url("img/mobile-scoreboard-with-text.png") no-repeat center center;
+  }
+  .top-panel .scoreboard-container .widget-container {
+    max-width: 300px;
+    height: 480px;
+    background: url("img/widget-screenshot.jpg") no-repeat center center;
+    margin: 0 auto;
+    position: relative;
+    top: 453px;
+    float: none;
+  }
 }
 
 .top-panel .scroll-down-arrow-container {
@@ -321,9 +341,9 @@ video {
 }
 .top-panel .scroll-down-arrow-container .scroll-arrow {
   margin-left: -50%;
-  background: url("http://thecrowdsline.staging.wpengine.com/wp-content/uploads/2016/01/down-arrow.png") no-repeat center center;
-  width: 100%;
-  height: 100%;
+  background: url("img/learn_more_arrow.png") no-repeat center center;
+  width: 138px;
+  height: 50px;
   position: absolute;
   cursor: pointer;
 }
@@ -332,8 +352,9 @@ video {
   font-size: 9px;
   text-align: center;
   line-height: 0;
-  letter-spacing: 0.9;
+  letter-spacing: 1px !important;
   margin-top: 3px;
+  font-family: "azo-sans-bold","Montserrat","Helvetica Neue",Helvetica,sans-serif;
 }
 
 .slick-arrow {

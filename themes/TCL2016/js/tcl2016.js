@@ -1,10 +1,26 @@
 ( function ($) {
     console.log('loading child functions');
+    var windowWidth = $(window).width();
+    var breakpoint = 800;
   
-    $('.top-panel').css({ height: $(window).innerHeight() });
-    $(window).resize(function(){
+
+    if(windowWidth > breakpoint) {
+      console.log('adjust');
       $('.top-panel').css({ height: $(window).innerHeight() });
-    });
+      $(window).resize(function(){
+        if(windowWidth > breakpoint) {
+          console.log('adjust');
+          $('.top-panel').css({ height: $(window).innerHeight() });
+        }
+        else {
+          console.log('dont adjust');
+        }
+      });
+    }
+    else {
+      console.log('dont adjust');
+    }
+    
 
 
     // Video functionality
