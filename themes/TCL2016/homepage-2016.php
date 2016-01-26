@@ -103,12 +103,14 @@ Template Name: - TCL Homepage 2016
 			<?php //the_post_thumbnail( 'medium' ); ?>
 		</a> -->
 		<div class="content">
-			<?php //if(is_category( 'NFL Predictions' ) { echo "PREDICTION"; } ?>
+			<!-- check if it's in the prediction category to add a prediction button/link -->
+				<?php if ( in_category( 'nfl-predictions' ) ) : ?>
 				<div class="prediction">
 					<button class="secondary"><a href="<?php the_permalink(); ?>">Make A Prediction</a></button>
 				</div>
-			<?php //} ?>
-			<div class="post-info">
+			<?php endif; ?>
+
+			<div class="post-info <?php if ( in_category( 'winners' ) ) { echo 'winner'; }; ?>">
 				<h2 class="entry-title">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 				</h2>

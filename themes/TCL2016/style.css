@@ -578,6 +578,9 @@ video {
 .latest-posts .post:hover .content .post-info{
   background-color: #1e4887;
 }
+.latest-posts .post .content .post-info.winner {
+  height: 150px;
+}
 
 
 .latest-posts .slick-arrow {
