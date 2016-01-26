@@ -114,7 +114,7 @@ Template Name: - TCL Homepage 2016
 </div>
 
 <!-- Latest Posts -->
-<div class="blog-title"><h3>From the Blog</h3>
+<div class="blog-title"><h3><a href="/blog">From the Blog</a></h3>
 <div class="latest-posts">
 	<?php
 	query_posts( 'posts_per_page=12' );

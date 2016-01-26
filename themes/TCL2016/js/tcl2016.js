@@ -1,7 +1,7 @@
 ( function ($) {
     console.log('loading child functions');
     var windowWidth = $(window).width();
-    var breakpoint = 800;
+    var breakpoint = 768;
   
 
     if(windowWidth > breakpoint) {
@@ -117,6 +117,11 @@
           }
         ]
       });
+
+      $('featured-slider .slick-arrow').on('click focus mouseup touchend', function(){
+        console.log('no more focus');
+        $(this).css('background-image', 'img/arrow-left.png');
+      })
 
     });
 } )( jQuery )
