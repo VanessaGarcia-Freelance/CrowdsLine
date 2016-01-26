@@ -470,10 +470,15 @@ video {
   background-color: #2d65b8;
   color: white;
   padding: 10px;
+  height: 274px;
 }
 .latest-posts .post .content .post-info h2 a {
   color: white;
   font-family: "azo-sans-bold","Montserrat","Helvetica Neue",Helvetica,sans-serif;
+}
+.latest-posts .post .content .post-info .date-title {
+  position: absolute;
+  bottom: 10px;
 }
 .latest-posts .post.slick-current, .latest-posts .post:hover {
   opacity: 1;
