@@ -88,7 +88,7 @@ Header
   /*top: 0;*/
   width: 100%;
   z-index: 1000;
-  background-color: transparent;
+  background-color: transparent!important;
 }
 #header .columns {
   display: inline-block;
@@ -124,6 +124,8 @@ Header
     transition: color 250ms ease-out .1s;
   }
 
+
+
 .header .nav {
   padding: 25px 0px;
 }
@@ -139,14 +141,14 @@ Header
     color:#5db0c6;
 }
 
-.nav li  a.highlight,
+/*.nav li  a.highlight,
 .nav li.current-menu-item a[title~="blog"],
 .archive .nav li a[title~="blog"],
 .nav li a[title~="blog"]:hover { 
     color:#5db0c6;
     background: rgba(0, 0, 0, 0) url("img/subnav-selected.png") no-repeat scroll center 45px;
     height: 60px;
-}
+}*/
 
 .nav li.menu-item-has-children:after {
   content: "";
@@ -405,11 +407,12 @@ video {
   /*color: #3d3d3d;*/
 }
 .featured-slider .slide-container.slide-01{
-  max-width: 952px;
+  max-width: 1010px;
   margin-top: 80px;
+  overflow: auto;
 }
 .featured-slider .slide-container.slide-01 .slide-image {
-  width: 55%;
+  width: 60%;
   float: left;
 }
 .featured-slider .slide-container.slide-01 .slide-image img{
@@ -418,7 +421,7 @@ video {
   float: left;
 }
 .featured-slider .slide-container.slide-01 .copy{
-  width: 45%;
+  width: 40%;
   float: right;
 }
 
@@ -439,6 +442,7 @@ video {
   font-size: 10px;
   text-align: center;
   font-family: "azo-sans-bold","Montserrat","Helvetica Neue",Helvetica,sans-serif;
+  color: #a7a7a7;
 }
 .featured-slider .slide-container.slide-02 .app-icons a {
   float: left;
@@ -507,6 +511,7 @@ video {
 .tabs .slick-slide p{
   text-align: center;
   font-size: 10px;
+  font-family: "azo-sans-bold","Montserrat","Helvetica Neue",Helvetica,sans-serif;
 }
 .tabs div.slick-current {
   color: white;
@@ -525,6 +530,7 @@ video {
   color: #a7a7a7;
   margin: 0;
   letter-spacing: 0 !important;
+  font-family: "azo-sans-bold","Montserrat","Helvetica Neue",Helvetica,sans-serif;
 }
 .latest-posts .slick-track {
   background-color: black;
@@ -569,6 +575,10 @@ video {
 .latest-posts .post.slick-current .content, .latest-posts .post:hover .content {
   display: block;
 }
+.latest-posts .post:hover .content .post-info{
+  background-color: #1e4887;
+}
+
 
 .latest-posts .slick-arrow {
   background: url('img/left-blog-arrow.png');
@@ -592,6 +602,7 @@ video {
   text-shadow: 0px 0px 0px white;
   transition: text-shadow 0;
 }
+
 /* ----------------------------------
 Event Section - Home Page
 ------------------------------------- */
