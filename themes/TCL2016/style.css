@@ -727,9 +727,9 @@ video {
   height: 574px;
   background: no-repeat center center;
   background-size: cover;
-  background-color: rgba(0,0,0, .5);
+  /*background-color: rgba(0,0,0, .5);*/
   position:relative;
-  opacity: .5;
+  opacity: .2;
 }
 .latest-posts .post .content {
   display: none;

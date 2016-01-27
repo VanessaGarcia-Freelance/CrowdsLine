@@ -69,7 +69,14 @@
 				</div>
 			</section>
 			<div class="collapse-menu-bg clearfix">
-				<a href="#" id="collapse-menu"><h3>Menu</h3></a>
+				<a href="#" id="collapse-menu"><h3>Menu</h3>
+				</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+		          <span class="sr-only">Toggle navigation</span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		        </button>
 			</div>
 		</div>
 
