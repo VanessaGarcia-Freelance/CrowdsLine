@@ -54,6 +54,15 @@
 	<div class="container<?php if( !get_theme_mod( 'theme_customizer_general2' ) == '0') { ?> boxed<?php } ?>">
 
 		<div class="mobile-menu clearfix<?php if( get_theme_mod( 'theme_customizer_general1' ) == '1') { ?> hidden<?php } ?>">
+			<div class="collapse-menu-bg clearfix">
+				<a href="#" id="collapse-menu">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+			          <span class="icon-bar"></span>
+			          <span class="icon-bar"></span>
+			          <span class="icon-bar"></span>
+			        </button>
+				</a>
+			</div>
 			<section id="collapse">
 				<div class="collapse-darker">
 
@@ -68,16 +77,7 @@
 				</div>
 				</div>
 			</section>
-			<div class="collapse-menu-bg clearfix">
-				<a href="#" id="collapse-menu"><h3>Menu</h3>
-				</a>
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
-		          <span class="sr-only">Toggle navigation</span>
-		          <span class="icon-bar"></span>
-		          <span class="icon-bar"></span>
-		          <span class="icon-bar"></span>
-		        </button>
-			</div>
+			
 		</div>
 
 	<!-- Header fade in navigation -->

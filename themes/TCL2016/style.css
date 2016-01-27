@@ -126,6 +126,52 @@ Header
     transition: color 250ms ease-out .1s;
   }
 
+.navbar-toggle {
+  background: transparent;
+  border-color: #ddd;
+  padding: 9px 10px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+.navbar-toggle .icon-bar {
+    background-color: white;
+    margin-bottom: 5px;
+    width: 25px;
+    height: 4px;
+    display: block;
+}
+.mobile-menu {
+  position: absolute;
+  z-index: 10000;
+  width: 100%;
+}
+.mobile-menu .collapse-menu-bg {
+  z-index: 100;
+  position: absolute;
+  right: 10px;
+}
+.collapse-darker .row {
+  width: 100%;
+}
+#menu-main-menu.nav-mobile li {
+  text-align: left;
+  font-size: 12px;
+  padding-top: 10px;
+}
+#collapse {
+  background-color: black; 
+}
+
+@media (max-width: 768px) { 
+  #header .row-header {
+    padding: 22px 0 30px;
+    width: 90%;
+  }
+  #header .row-header .logo {
+    text-align: left;
+  }
+
+}
 
 
 .header .nav {
