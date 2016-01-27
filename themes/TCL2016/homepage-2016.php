@@ -14,20 +14,26 @@ Template Name: - TCL Homepage 2016
 		<source src="<?php echo get_stylesheet_directory_uri(); ?>/videos/TCL_homepage_video.mp4" type="video/mp4">
 	</video>
 
+	<?php 
+		$nflWidget = types_render_field( "nfl-widget", array() );
+		$nbaWidget = types_render_field( "nba-widget", array() );
+		$ncaabWidget = types_render_field( "ncaab-widget", array() );
+	?>
 
 	<div class="scoreboard-container">
 		<div class="widget-container">
 			<div class="games">
 				<div class="game nfl active">
-					NFL WIDGET
+					<?php echo $nflWidget ?>
 				</div>
 				<div class="game nba">
-					NBA WIDGET
+					<?php echo $nbaWidget ?>
 				</div>
 				<div class="game ncaab">
-					NCAAB WIDGET
+					<?php echo $ncaabWidget ?>
 				</div>
 			</div>
+			
 			
 			<div class="more-games">
 				<h4>More Games</h4>

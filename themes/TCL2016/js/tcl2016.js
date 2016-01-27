@@ -89,8 +89,8 @@
         slidesToScroll: 1,
         slidesToShow: 5,
         centerMode: true,
-        prevArrow: '<button type="button" class="slick-prev"></button>',
-        nextArrow: '<button type="button" class="slick-next"></button>',
+        prevArrow: '<a type="button" class="slick-prev"></a>',
+        nextArrow: '<a type="button" class="slick-next"></a>',
         responsive: [
           {
             breakpoint: 1024,
