@@ -70,10 +70,10 @@ jQuery(document).ready(function ($) {
        
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
-        if (scroll >= 400) {
-            $(".header-shrink").fadeIn("fast");
+        if (scroll >= 109) {
+            $(".header-shrink").show();//fadeIn("fast");
         } else {
-            $(".header-shrink").fadeOut("fast");
+            $(".header-shrink").hide();//fadeOut("fast");
         }
     });
 
